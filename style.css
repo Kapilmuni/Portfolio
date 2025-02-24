@@ -585,3 +585,154 @@ body{
         opacity: 1;
     }
 }
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        padding: 15px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        margin-top: 15px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    /* Home Section */
+    .home {
+        padding: 100px 5% 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .home-content {
+        min-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    /* About Section */
+    .about {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    .about-img img {
+        margin: 0 auto 30px;
+        height: 250px;
+        max-width: 250px;
+    }
+
+    .about-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    /* Skills Section */
+    .container {
+        padding: 30px 5%;
+    }
+
+    .services-list div {
+        padding: 20px;
+    }
+
+    /* Tech Stack */
+    #tech-stack {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #main-stack,
+    #tools {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Projects Section */
+    .portfolio-content {
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .row {
+        height: auto;
+    }
+
+    /* Contact Section */
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+        margin-top: 50px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+    }
+
+    /* Footer */
+    .last-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    #main-stack,
+    #tools {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .stacks {
+        font-size: 24px;
+    }
+
+    .contact-text h2 {
+        font-size: 40px;
+    }
+}
